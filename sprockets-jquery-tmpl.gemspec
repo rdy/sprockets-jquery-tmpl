@@ -1,6 +1,6 @@
 # -*- encoding: utf-8 -*-
 $:.push File.expand_path('../lib', __FILE__)
-require 'sprockets/version'
+require 'sprockets/jquery/tmpl/version'
 
 Gem::Specification.new do |s|
   s.name        = 'sprockets-jquery-tmpl'
@@ -18,5 +18,5 @@ Gem::Specification.new do |s|
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
 
-  s.add_dependency 'actionpack', '3.1.0.rc4'
+  s.add_dependency 'actionpack', '~> 3.1.0.rc5'
 end
