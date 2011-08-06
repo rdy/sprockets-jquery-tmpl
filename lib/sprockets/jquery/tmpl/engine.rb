@@ -1,7 +1,8 @@
 module Sprockets
   module Jquery
     module Tmpl
-      VERSION = '0.0.4'
+      class Engine < ::Rails::Engine
+      end
     end
   end
 end
