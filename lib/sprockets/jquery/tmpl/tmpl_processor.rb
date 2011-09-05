@@ -27,5 +27,10 @@ module Sprockets
       end
     end
   end
-  register_engine '.tmpl', ::Sprockets::Jquery::Tmpl::TmplProcessor
 end
+
+begin
+  Rails.application.assets.register_engine '.tmpl', ::Sprockets::Jquery::Tmpl::TmplProcessor
+rescue
+end  
+
