@@ -1,3 +1,4 @@
+require 'sprockets'
 require 'sprockets/engines'
 require 'tilt'
 require 'action_view'
@@ -27,6 +28,6 @@ module Sprockets
       end
     end
   end
-  
+
   register_engine '.tmpl', ::Sprockets::Jquery::Tmpl::TmplProcessor
 end
