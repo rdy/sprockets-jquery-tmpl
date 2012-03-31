@@ -6,7 +6,7 @@ This gem adds jQuery templates as tilt templates for Sprockets 2 in Rails 3.1.
 Installing
 ==========
 
- 1. Add the gem to bundler or install:  `gem install sprockets-jquey-tmpl`
+ 1. Add the gem to bundler or install:  `gem install sprockets-jquery-tmpl`
 
 Any files in assets/javascripts/tmpls will be automatically added to jQuery templates list of templates using the path from that directory (i.e. assets/javascripts/tmpls/examples/index.tmpl will be mapped to $.tmpl("examples/index") )
 
