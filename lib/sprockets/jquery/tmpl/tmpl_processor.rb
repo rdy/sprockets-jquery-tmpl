@@ -21,7 +21,7 @@ module Sprockets
         def evaluate(scope, locals, &block)
           <<-TMPL
 (function($) {
-  $.template(#{scope.logical_path.gsub(/^tmpls\/(.*)$/i, "\\1").inspect}, "#{escape_javascript data}");
+  jQuerySG.template(#{scope.logical_path.gsub(/^tmpls\/(.*)$/i, "\\1").inspect}, "#{escape_javascript data}");
 })(jQuery);
           TMPL
         end
